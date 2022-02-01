@@ -10,44 +10,41 @@
 <body>
     
     <main style="overflow-x: hidden;" class="">
-        <header>
-            <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="index.html">Simple Viajes</a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+      <header class="bg-primary w-100">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html"><img src="assets/logo.jpg" alt="Logo" width="100"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><span><i class="fas fa-home"></i> Inicio</span></a>
                       </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Mis viajes</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Administración</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Simple Pago</a>
-                      </li>
-                    </ul>
-                    <div class="me-5">
-                        <div class="dropdown">
-                            <button class="btn dropdown-toggle me-5 text-white" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                              Perfil
-                            </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                              <li><a class="dropdown-item" href="#">Cuenta</a></li>
-                              <li><a class="dropdown-item" href="#">Ajustes</a></li>
-                              <li><a class="dropdown-item" href="#">Log out</a></li>
-                            </ul>
-                          </div>
-                    </div>
-                  </div>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="servicios.html"><span><i class="fas fa-layer-group"></i> Servicios</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="simple-pagos.html"><span><i class="fas fa-money-bill-wave"></i> Simple pago</span></a>
+                  </li>
+                </ul>
+                <div class="me-5">
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle me-5 text-white" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                          Perfil
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                          <li><a class="dropdown-item" href="#">Cuenta</a></li>
+                          <li><a class="dropdown-item" href="#">Ajustes</a></li>
+                          <li><a class="dropdown-item" href="#">Log out</a></li>
+                        </ul>
+                      </div>
                 </div>
-              </nav>
-        </header>
+              </div>
+            </div>
+          </nav>
+    </header>
 
         <div class="d-flex flex-column justify-content-center">
             <h1 class="text-center text-primary m-4">Pedí transporte o generá ganancias prestando servicios como conductor</h1>
@@ -94,19 +91,19 @@
 
         </div>
 
-        <footer class="bg-primary">
-            <div class="row mb">
-                <div class="col-md-4">
-                    <a href="#" class="text-white m-3 text-decoration-none">Quiénes somos</a>
-                </div>
-                <div class="col-md-4">
-                    <a href="#" class="text-white m-3 text-decoration-none">Contacto</a>
-                </div>
-                <div class="col-md-4">
-                    <a href="#" class="text-white m-3 text-decoration-none">Descubre cómo invertir</a>
-                </div>
-            </div>
-          </footer>
+        <footer class="bg-primary fixed-bottom p-3 w-100">
+          <ul class="nav justify-content-center">
+              <li class="nav-item ">
+                <a class="nav-link text-white" aria-current="page" href="#">Quiénes somos</a>
+              </li>
+              <li class="nav-item text-white">
+                <a class="nav-link text-white" href="#">Contacto</a>
+              </li>
+              <li class="nav-item text-white">
+                <a class="nav-link text-white" href="#">Trabaje con nosotros</a>
+              </li>
+            </ul>
+        </footer>
 
     </main>
 
