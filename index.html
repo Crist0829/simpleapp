@@ -11,13 +11,13 @@
     <link rel="stylesheet" href="css/font-awesome/solid.css">
     <title>Simple App</title>
 </head>
-<body>
+<body class="degradado-lineal">
     
-    <main style="overflow-x: hidden;" class="">
-        <header class="bg-primary w-100">
-            <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <main style="overflow-x: hidden;" class="degradado-lineal">
+        <header class="w-100">
+            <nav class="navbar navbar-expand-lg navbar-dark transparente">
                 <div class="container-fluid">
-                  <a class="navbar-brand" href="index.html"><img src="assets/logo.jpg" alt="Logo" width="100"></a>
+                  <a class="navbar-brand" href="index.html"><img src="assets/logo.png" alt="Logo" width="120"></a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
@@ -52,13 +52,133 @@
 
         <div class="h-75 w-100 d-flex flex-column justify-content-center mb-5">
 
-            <div class="bg-secondary my-4 d-flex flex-column justify-content-center align-items-center">
+            <div class="transparente-3 d-flex flex-column justify-content-center align-items-center">
                 <div class="d-flex flex-column align-items-center justify-content-center">
                     <p class="text-white fs-5 m-3 text-center"> ¡Descubrí la mejor plataforma para comprar, viajar y pedir delivery! <a href="login.html" class="btn btn-outline-light m-2">¡Empezar ya!</a></p>
                 </div>
             </div>
 
             <div class="row mb-5">
+
+                <div class="col-md-12">
+                    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active" data-bs-interval="3000">
+                            <img src="assets/productos y servicios.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item" data-bs-interval="3000">
+                            <img src="assets/viajes.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item" data-bs-interval="3000">
+                            <img src="assets/delivery.jpg" class="d-blocks w-100" alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="transparente shadow m-3">
+                        <div class="card-header">
+                            <div class="d-flex flex-column align-items-center">
+                                <h2 class="text-center m-2 text-white">COMPRÁ Y VENDÉ PRODUCTOS Y SERVICIOS...</h2>
+                                <img src="assets/productos y servicios.jpg" alt="compras" width="500" class="m-2 rounded img-fluid">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            
+                            <div class="m-3">
+
+                                <p class="fs-4 m-2 text-center">¡DE MANERA RÁPIDA, SENCILLA Y SEGURA!</p>
+
+                            </div>
+
+                            <div class="d-grid gap-2">
+                                <a href="simple-compras.html" class="text-center text-black fs-5 p-2 text-decoration-none btn btn-outline-light"><span><i class="fas fa-search"></i> Descubre más</span></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-md-6">
+                    <div class="shadow m-3 transparente">
+                        <div class="card-header">
+                            <div class="d-flex flex-column align-items-center">
+                                <h2 class="text-center m-2 text-white">VIAJÁ O CONVERTITE EN CONDUCTOR</h2>
+                                <img src="assets/viajes.jpg" alt="compras" width="500" class="m-2 rounded img-fluid">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            
+                            <div class="m-3">
+
+                                <p class="fs-4 m-2 text-center">¡OBTÉN TRANSPORTE O GENERA GANANCIAS CONDUCIENDO!</p>
+
+                            </div>
+
+                            <div class="d-grid gap-2">
+                                <a href="simple-viajes.html" class="text-center text-black fs-5 p-2 text-decoration-none btn btn-outline-light"><span><i class="fas fa-search"></i> Descubre más</span></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="transparente shadow m-3">
+                        <div class="card-header">
+                            <div class="d-flex flex-column align-items-center">
+                                <h2 class="text-center m-2 text-white">PEDÍ UN DELIVERY O VOLVÉTE REPARTIDOR</h2>
+                                <img src="assets/delivery.jpg" alt="compras" width="500" class="m-2 rounded img-fluid">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            
+                            <div class="m-3">
+
+                                <p class="fs-4 m-2 text-center">SERVICIO DE DELIVERY</p>
+
+                            </div>
+
+                            <div class="d-grid gap-2">
+                                <a href="simple-delivery.html" class="text-center text-black fs-5 p-2 text-decoration-none btn btn-outline-light"><span><i class="fas fa-search"></i> Descubre más</span></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="transparente shadow m-3">
+                        <div class="card-header">
+                            <div class="d-flex flex-column align-items-center">
+                                <h2 class="text-center m-2 text-white">GESTIONA PAGOS O INVERTÍ EN CRIPTOMONEDAS</h2>
+                                <img src="assets/cripto.jpg" alt="compras" width="500" class="m-2 rounded img-fluid">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            
+                            <div class="m-3">
+
+                                <p class="fs-4 m-2 text-center">INGRESA AL MUNDO DE LAS CRIPTOMONEDAS DE MANERA SENCILLA</p>
+
+                            </div>
+
+                            <div class="d-grid gap-2">
+                                <a href="simple-pago.html" class="text-center text-black fs-5 p-2 text-decoration-none btn btn-outline-light"><span><i class="fas fa-search"></i> Descubre más</span></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
 
                 <div class="col-md-12">
                     <div class="row">
@@ -68,7 +188,7 @@
                                 <h4 class="text-center"> QUIÉNES SOMOS <i class="fas fa-info-circle"></i></h4>
                             <p class="fs-6 text-center m-0 mb-1">Somos una empresa que brinda servicios de transporte, compras y envíos...</p>
                             <div class="text-center">
-                                <a href="" class="text-end">CONOCE MÁS SOBRE NOSOTROS</a>
+                                <a href="" class="text-end text-white">CONOCE MÁS SOBRE NOSOTROS</a>
                             </div>
                             
                             </div>
@@ -80,7 +200,7 @@
                             <p class="fs-6 text-center m-0">Simple es una empresa que está en constante crecimiento.</p>
                             <p class="fs-6 text-center mb-1">Por eso estamos abiertos a recibir nuevos miembros del equipo.</p>
                             <div class="text-center">
-                                <a href="" class="text-end">CONOCE MÁS SOBRE CÓMO PUEDER SER SOCIO</a>
+                                <a href="" class="text-end text-white">CONOCE MÁS SOBRE CÓMO PUEDER SER SOCIO</a>
                             </div>
                             
                             </div>
@@ -92,7 +212,7 @@
                             <p class="fs-6 text-center m-0">Si tienes alguna duda o te gustaría ponerte en contacto con nosotros</p>
                             <p class="fs-6 text-center mb-1">Envíanos un mensaje y te responderemos lo más rápido posible.</p>
                             <div class="text-center">
-                                <a href="" class="text-end">CONTÁCTANOS</a>
+                                <a href="" class="text-end text-white">CONTÁCTANOS</a>
                             </div>
                             
                             </div>
@@ -101,110 +221,12 @@
                     </div>
                 </div>
 
-                <div class="col-md-6">
-                    <div class="card shadow m-3">
-                        <div class="card-header">
-                            <div class="d-flex flex-column align-items-center">
-                                <h2 class="text-center m-2 text-primary">COMPRÁ Y VENDÉ PRODUCTOS Y SERVICIOS...</h2>
-                                <img src="assets/productos y servicios.jpg" alt="compras" width="500" class="m-2 rounded img-fluid">
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            
-                            <div class="m-3">
-
-                                <p class="fs-5 m-2 text-center">¡DE MANERA RÁPIDA, SENCILLA Y SEGURA!</p>
-
-                            </div>
-
-                            <div class="bg-primary text-center p-2 rounded">
-                                <a href="simple-viajes.html" class="text-center text-white fs-5 text-decoration-none"><span><i class="fas fa-search text-white"></i> Descubre más</span></a>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="col-md-6">
-                    <div class="card shadow m-3">
-                        <div class="card-header">
-                            <div class="d-flex flex-column align-items-center">
-                                <h2 class="text-center m-2 text-primary">VIAJÁ O CONVERTITE EN CONDUCTOR</h2>
-                                <img src="assets/viajes.jpg" alt="compras" width="500" class="m-2 rounded img-fluid">
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            
-                            <div class="m-3">
-
-                                <p class="fs-5 m-2 text-center">¡OBTÉN TRANSPORTE O GENERA GANANCIAS CONDUCIENDO!</p>
-
-                            </div>
-
-                            <div class="bg-primary text-center p-2 rounded">
-                                <a href="simple-viajes.html" class="text-center text-white fs-5 text-decoration-none"><span><i class="fas fa-search text-white"></i> Descubre más</span></a>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6">
-                    <div class="card shadow m-3">
-                        <div class="card-header">
-                            <div class="d-flex flex-column align-items-center">
-                                <h2 class="text-center m-2 text-primary">PEDÍ UN DELIVERY O VOLVÉTE REPARTIDOR</h2>
-                                <img src="assets/delivery.jpg" alt="compras" width="500" class="m-2 rounded img-fluid">
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            
-                            <div class="m-3">
-
-                                <p class="fs-5 m-2 text-center">SERVICIO DE DELIVERY</p>
-
-                            </div>
-
-                            <div class="bg-primary text-center p-2 rounded">
-                                <a href="simple-delivery.html" class="text-center text-white fs-5 text-decoration-none"><span><i class="fas fa-search text-white"></i> Descubre más</span></a>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6">
-                    <div class="card shadow m-3">
-                        <div class="card-header">
-                            <div class="d-flex flex-column align-items-center">
-                                <h2 class="text-center m-2 text-primary">GESTIONA PAGOS O INVERTÍ EN CRIPTOMONEDAS</h2>
-                                <img src="assets/cripto.jpg" alt="compras" width="500" class="m-2 rounded img-fluid">
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            
-                            <div class="m-3">
-
-                                <p class="fs-5 m-2 text-center">INGRESA AL MUNDO DE LAS CRIPTOMONEDAS DE MANERA SENCILLA</p>
-
-                            </div>
-
-                            <div class="bg-primary text-center p-2 rounded">
-                                <a href="#" class="text-center text-white fs-5 text-decoration-none"><span><i class="fas fa-search text-white"></i> Descubre más</span></a>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-                
-
                 
         </div>
 
         </div>
 
-        <footer class="bg-primary fixed-bottom p-3 w-100">
+        <footer class="p-3 w-100">
             <ul class="nav justify-content-center">
                 <li class="nav-item ">
                   <a class="nav-link text-white" aria-current="page" href="#">Quiénes somos</a>
