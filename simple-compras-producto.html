@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome/all.css">
+    <link rel="stylesheet" href="css/font-awesome/fontawesome.css">
+    <link rel="stylesheet" href="css/font-awesome/regular.css">
+    <link rel="stylesheet" href="css/font-awesome/solid.css">
+    <title>Simple compras - producto</title>
+</head>
+<body class="degradado-lineal">
+    
+    <main style="overflow-x: hidden;" class="">
+      <header class="w-100">
+        <nav class="navbar navbar-expand-lg navbar-dark transparente">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html"><img src="assets/logo.png" alt="Logo" width="120"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><span><i class="fas fa-home"></i> Inicio</span></a>
+                      </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="servicios.html"><span><i class="fas fa-layer-group"></i> Servicios</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="simple-pagos.html"><span><i class="fas fa-money-bill-wave"></i> Simple pago</span></a>
+                  </li>
+                </ul>
+                <div class="me-5">
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle me-5 text-white" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                          Perfil
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                          <li><a class="dropdown-item" href="simple-cuenta.html">Cuenta</a></li>
+                          <li><a class="dropdown-item" href="#">Log out</a></li>
+                        </ul>
+                      </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+        <h3 class="text-white m-3 text-center">SIMPLE COMPRAS - Nombre del producto</h3>
+
+
+        <div class="d-flex flex-column justify-content-center">
+            <div class="row mb-2">
+                
+
+                <div class="col-md-6">
+                  <div class="transparente m-2">
+                    <div class="card-header">
+                      <h3 class="text-center text-white">PRODUCTO</h3>
+                    </div>
+                    <div class="card-body">
+                       <img src="assets/producto.png" alt="producto" class="img-fluid">
+                      
+                       <div class="m-3">
+                        <p class="text-start fs-4 m-0">Nombre del producto</p>
+                        <p class="text-start fs-4 m-0">Descripción del producto</p>
+                        <p class="text-start fs-4 m-0">Precio</p>
+                        <p class="text-start fs-4 m-0">Ubicación</p>
+                        <p class="text-start fs-4 m-0">Envío</p>
+                       </div>
+
+                       <div class="d-flex flex-row">
+                        <div class="m-2">
+                          <!-- Button trigger modal -->
+                          <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                              Comprar
+                          </button>
+        
+                          <!-- Modal -->
+                          <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="staticBackdropLabel">Comprar - nombre del producto</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                  <p>Información sobre la compra del producto</p>
+                                  <p>Medios de pago</p>
+                                  <p>Cuotas</p>
+                                  <p>Simpe pago</p>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Comprar</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                       </div>
+
+                    </div>
+                  </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="transparente m-2">
+                  <div class="card-header">
+                    <h3 class="text-center text-white">COMPRA</h3>
+                  </div>
+                  <div class="card-body">
+
+                    <h3 class="text-white m-3">Información del vendedor</h3>
+
+                    <p class="text-black">Nombre: <strong class="text-white">John Doe</strong> </p>
+                    <p class="text-black">Ubicación: <strong class="text-white">Mendoza</strong> </p>
+                    <p class="text-black">Cantidad de ventas: <strong class="text-white">20</strong> </p>
+                    <p class="text-black">Calificación: <strong class="text-white">4.5 / 5</strong> </p>
+
+                    <hr>
+
+                   <h3 class="text-white m-3">Pregunta algo al vendedor</h3>
+
+                   <form action="">
+                        <div class="form-group m-2">
+                            <label for="pregunta" class="text-white form-label">PREGUNTA:</label>
+                            <textarea name="comentario" id="pregunta" cols="10" rows="10" class="form-control">
+
+                            </textarea>
+                        </div>
+
+                        <div class="form-group m-2">
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-outline-light">Enviar</button>
+                            </div>
+                        </div>
+                   </form>
+
+                  </div>
+                </div>
+            </div>
+
+            
+               
+                
+            </div>
+
+        </div>
+
+        <footer class="p-3 w-100">
+          <ul class="nav justify-content-center">
+              <li class="nav-item ">
+                <a class="nav-link text-white" aria-current="page" href="sobre-nosotros.html">Quiénes somos</a>
+              </li>
+              <li class="nav-item text-white">
+                <a class="nav-link text-white" href="#">Contacto</a>
+              </li>
+              <li class="nav-item text-white">
+                <a class="nav-link text-white" href="#">Trabaje con nosotros</a>
+              </li>
+            </ul>
+        </footer>
+
+    </main>
+
+
+      
+
+
+    <script defer src="js/bootstrap.js"></script>
+    <script defer src="js/font-awesome/all.js"></script>
+    <script defer src="js/font-awesome/fontawesome.js"></script>
+    <script defer src="js/font-awesome/regular.js"></script>
+    <script defer src="js/font-awesome/solid.js"></script>
+</body>
+</html>

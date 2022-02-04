@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome/all.css">
+    <link rel="stylesheet" href="css/font-awesome/fontawesome.css">
+    <link rel="stylesheet" href="css/font-awesome/regular.css">
+    <link rel="stylesheet" href="css/font-awesome/solid.css">
+    <title>Login</title>
+</head>
+<body class="degradado-lineal">
+    
+    <main style="overflow-x: hidden;">
+        <header class="w-100">
+            <nav class="navbar navbar-expand-lg navbar-dark transparente">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="index.html"><img src="assets/logo.png" alt="Logo" width="120"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html"><span><i class="fas fa-home"></i> Inicio</span></a>
+                          </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="servicios.html"><span><i class="fas fa-layer-group"></i> Servicios</span></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="simple-pagos.html"><span><i class="fas fa-money-bill-wave"></i> Simple pago</span></a>
+                      </li>
+                    </ul>
+                    <div class="me-5">
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle me-5 text-white" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                              Perfil
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                              <li><a class="dropdown-item" href="simple-cuenta.html">Cuenta</a></li>
+                              <li><a class="dropdown-item" href="#">Log out</a></li>
+                            </ul>
+                          </div>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+        </header>
+
+        <div class="w-100 d-flex flex-column justify-content-center mb-2">
+
+            <div class="row mb-5">
+
+            <div class="col-md-12 mb-3">
+                <div class="d-flex flex-column align-items-center">
+                    <h1 class="text-white m-2">INICIO DE SESIÓN</h1>
+                </div>
+
+            </div>
+                
+            <div class="col-md-6">
+              <div class="transparente m-3">
+                  <div class="card-header">
+                      <h3 class="text-black text-white text-center">INICIO DE SESIÓN</h3>
+                  </div>
+                  <div class="card-body">
+
+                    <h3 class="text-white m-3">Iniciar sesión</h3>
+
+                      <form action="mt-2 mb-2">
+                        
+
+                        <div class="form-group m-2">
+                          <label for="email" class="text-white form-label">Correo</label>
+                          <input type="email" class="form-control" placeholder="Ejemplo@fakemail.com">
+                        </div>
+
+                        <div class="form-group m-2">
+                          <label for="contraseña" class="text-white form-label">CONTRASEÑA</label>
+                          <input type="email" class="form-control" id="contraseña">
+                        </div>
+
+                        <div class="form-group m-2 mt-3"> 
+                          <div class="d-grid gap-2">
+                            <button class="btn btn-outline-light">INICIAR SESIÓN</button>
+                          </div>
+                        </div>
+
+                      </form>
+
+                      <hr class="mt-3 mb-3">
+
+                      <h3 class="text-white m-3">Ó iniciar sesión con</h3>
+
+                        <div class="d-flex flex-column align-items-center">
+                          <div class="d-flex flex-row">
+                            <div class="m-2 p-2">
+                              <a href="" style="font-size: 32pt;" class="text-white"><i class="fab fa-facebook-square"></i></a>
+                            </div>
+                            <div class="m-2 p-2">
+                              <a href="" style="font-size: 32pt;" class="text-white"><i class="fab fa-twitter-square"></i></a>
+                            </div>
+                            <div class="m-2 p-2">
+                              <a href="" style="font-size: 32pt;" class="text-white"><i class="fab fa-google"></i></a>
+                            </div>
+                          </div>
+                        </div>
+
+                    
+
+                      </form>
+
+                                            
+                  </div>
+              </div>
+          </div>
+
+            <div class="col-md-6">
+                <div class="transparente m-3">
+                    <div class="card-header">
+                        <h3 class="text-black text-white text-center">Registrarse</h3>
+                    </div>
+                    <div class="card-body">
+
+
+                        <form action="mt-2 mb-2">
+                          <div class="form-group m-2">
+                            <label for="nombre" class="text-white form-label">Nombre</label>
+                            <input type="text" class="form-control" placeholder="Jhon Doe" id="nombre">
+                          </div>
+
+                          <div class="form-group m-2">
+                            <label for="nombre" class="text-white form-label">Correo</label>
+                            <input type="email" class="form-control" placeholder="Ejemplo@fakemail.com">
+                          </div>
+
+                          <div class="form-group m-2">
+                            <label for="c-actual" class="text-white form-label">Contraseña</label>
+                            <input type="password" class="form-control" id="c-actual">
+                          </div>
+
+                          <div class="form-group m-2">
+                            <label for="c-nueva" class="text-white form-label">Repite la contraseña</label>
+                            <input type="password" class="form-control" id="c-nueva">
+
+                          <div class="form-group m-2 mt-3"> 
+                            <div class="d-grid gap-2">
+                              <button class="btn btn-outline-light">REGISTRARSE</button>
+                            </div>
+                          </div>
+
+                        </form>
+
+                        <hr class="mt-3 mb-3">
+
+                      <h3 class="text-white m-3">Ó Registrarse con</h3>
+
+                        <div class="d-flex flex-column align-items-center">
+                          <div class="d-flex flex-row">
+                            <div class="m-2 p-2">
+                              <a href="" style="font-size: 32pt;" class="text-white"><i class="fab fa-facebook-square"></i></a>
+                            </div>
+                            <div class="m-2 p-2">
+                              <a href="" style="font-size: 32pt;" class="text-white"><i class="fab fa-twitter-square"></i></a>
+                            </div>
+                            <div class="m-2 p-2">
+                              <a href="" style="font-size: 32pt;" class="text-white"><i class="fab fa-google"></i></a>
+                            </div>
+                          </div>
+                        </div>
+                                              
+                    </div>
+                </div>
+            </div>
+
+
+            </div>
+
+        </div>
+
+        
+
+    </main>
+
+
+    <footer class="transparente-2 p-3 w-100">
+        <ul class="nav justify-content-center">
+            <li class="nav-item ">
+              <a class="nav-link text-black" href="sobre-nosotros.html">Quiénes somos</a>
+            </li>
+            <li class="nav-item text-white">
+              <a class="nav-link text-black" href="#">Contacto</a>
+            </li>
+            <li class="nav-item text-white">
+              <a class="nav-link text-black" href="#">Trabaje con nosotros</a>
+            </li>
+          </ul>
+      </footer>
+
+
+<script src="js/bootstrap.js"></script>
+<script defer src="js/font-awesome/all.js"></script>
+<script defer src="js/font-awesome/fontawesome.js"></script>
+<script defer src="js/font-awesome/regular.js"></script>
+<script defer src="js/font-awesome/solid.js"></script>
+</body>
+</html>

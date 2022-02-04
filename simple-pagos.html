@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome/all.css">
+    <link rel="stylesheet" href="css/font-awesome/fontawesome.css">
+    <link rel="stylesheet" href="css/font-awesome/regular.css">
+    <link rel="stylesheet" href="css/font-awesome/solid.css">
+    <title>Simple Pago</title>
+</head>
+<body class="degradado-lineal">
+    
+    <main style="overflow-x: hidden;"E>
+        <header class="w-100">
+            <nav class="navbar navbar-expand-lg navbar-dark transparente">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="index.html"><img src="assets/logo.png" alt="Logo" width="120"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html"><span><i class="fas fa-home"></i> Inicio</span></a>
+                          </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="servicios.html"><span><i class="fas fa-layer-group"></i> Servicios</span></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="simple-pagos.html"><span><i class="fas fa-money-bill-wave"></i> Simple pago</span></a>
+                      </li>
+                    </ul>
+                    <div class="me-5">
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle me-5 text-white" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                              Perfil
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                              <li><a class="dropdown-item" href="simple-cuenta.html">Cuenta</a></li>
+                              <li><a class="dropdown-item" href="#">Log out</a></li>
+                            </ul>
+                          </div>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+        </header>
+
+        <div class="w-100 d-flex flex-column justify-content-center mb-5">
+
+            <div class="row mb-5">
+
+            <div class="col-md-12 mb-3">
+                <div class="d-flex flex-column align-items-center">
+                    <h1 class="text-white m-2">Simple Pago</h1>
+                    <h3 class="text-white m-2">Gestiona tus pagos, compras o inversiones...</h3>
+
+                    <div class="d-flex flex-row mt-3">
+                        <div class="">
+                            <div class="transparente m-2 p-2 rounded-circle">
+                                <div class="text-center">
+                                    <a href="#Pagar" style="font-size: 32pt;" class="m-2"> <i class="fas fa-wallet text-white"></i></a>
+                                </div>
+                            </div>
+    
+                            <div class="text-center">
+                                <a href="simple-wallet.html" class="btn btn-outline-light btn-sm">Wallet</a>
+                            </div>
+                        </div>
+    
+                        <div class="">
+                            <div class="transparente m-2 p-2 rounded-circle">
+                                <div class="text-center">
+                                    <a href="#Pagar" style="font-size: 32pt;" class="m-2"> <i class="fas fa-exchange-alt text-white"></i></a>
+                                </div>
+                            </div>
+    
+                            <div class="text-center">
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-outline-light btn-sm" data-bs-toggle="modal" data-bs-target="#transferir">
+                                    Transferir
+                                  </button>
+
+                                  <!-- Modal -->
+                                  <div class="modal fade" id="transferir" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                      <div class="modal-content">
+                                        <div class="modal-header">
+                                          <h5 class="modal-title" id="staticBackdropLabel">TRANSFERIR FONDOS</h5>
+                                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div>
+                                                <form action="">
+                                                    <div class="form-group m-2">
+                                                        <div class="d-flex flex-row">
+                                                            <input type="text" class="form-control" placeholder="Buscar usuario"> 
+                                                            <button class="btn btn-outline-dark"><i class="fas fa-search"></i></button>
+                                                        </div>
+                                                    </div>
+
+                                                    <hr>
+
+                                                    <div class="form-group m-2">
+                                                        <label for="fondo" class="form-label">Monto</label>
+                                                        <input type="number" class="form-control" id="fondo"> 
+                                                    </div>
+
+                                                    <div class="form-group m-2">
+                                                        <label for="coment" class="form-label">Comentario</label>
+                                                        <input type="number" class="form-control" id="coment"> 
+                                                    </div>
+
+                                                    <hr>
+
+                                                    <div class="d-grid gap">
+                                                        <button class="btn btn-outline-dark">ENVIAR</button>
+                                                    </div>
+
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                          <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Aceptar</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+    
+                        <div class="">
+                            <div class="transparente m-2 p-2 rounded-circle">
+                                <div class="text-center">
+                                    <a href="#Pagar" style="font-size: 32pt;" class="m-2"> <i class="fas fa-sign-in-alt text-white"></i></a>
+                                </div>
+                            </div>
+    
+                            <div class="text-center">
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-outline-light btn-sm" data-bs-toggle="modal" data-bs-target="#ingresar">
+                                    Ingresar
+                                  </button>
+
+                                  <!-- Modal -->
+                                  <div class="modal fade" id="ingresar" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                      <div class="modal-content">
+                                        <div class="modal-header">
+                                          <h5 class="modal-title" id="staticBackdropLabel">Ingresar Saldo</h5>
+                                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form action="">
+                                                <div class="form-group m-2">
+                                                    <label for="importe">Importe</label>
+                                                    <input type="number" class="form-control">
+                                                </div>
+                                                <div class="d-grid gap-2">
+                                                    <button class="btn btn-outline-dark">INGRESAR SALDO</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                          <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Aceptar</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+    
+                        <div class="">
+                            <div class="transparente m-2 p-2 rounded-circle">
+                                <div class="text-center">
+                                    <a href="#Pagar" style="font-size: 32pt;" class="m-2"> <i class="fas fa-money-bill text-white"></i></a>
+                                </div>
+                            </div>
+    
+                            <div class="text-center">
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-outline-light btn-sm" data-bs-toggle="modal" data-bs-target="#saldo">
+                                    Saldo
+                                  </button>
+
+                                  <!-- Modal -->
+                                  <div class="modal fade" id="saldo" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                      <div class="modal-content">
+                                        <div class="modal-header">
+                                          <h5 class="modal-title" id="staticBackdropLabel">Saldo</h5>
+                                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>Tu saldo es: 00000.</p>
+                                            <p>número de transacciones: 0.</p>
+                                            <p>Estado de la cuenta: activa - desactiva.</p>
+                                            <p>Información general.</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                          <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Aceptar</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            
+
+            </div>
+                
+            <div class="col-md-4">
+                <div class="transparente m-3">
+                    <div class="card-header">
+                        <h3 class="text-black text-white text-center">CARD INFORMATIVA O PROMOCIONAL</h3>
+                    </div>
+                    <div class="card-body text-center">
+                        <img src="assets/promocion.png" alt="" class="img-fluid">
+                        <p class="text-black text-center m-2 fs-3"> Información de la promoción o descripción </p>
+                        <p class="text-black text-center m-2 fs-3"> Información de la promoción o descripción </p>
+                        <p class="text-black text-center m-2 fs-3"> Información de la promoción o descripción </p>
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-outline-light"> Enlace </button>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="transparente m-3">
+                    <div class="card-header">
+                        <h3 class="text-black text-white text-center">CARD INFORMATIVA O PROMOCIONAL</h3>
+                    </div>
+                    <div class="card-body text-center">
+                        <img src="assets/promocion.png" alt="" class="img-fluid">
+                        <p class="text-black text-center m-2 fs-3"> Información de la promoción o descripción </p>
+                        <p class="text-black text-center m-2 fs-3"> Información de la promoción o descripción </p>
+                        <p class="text-black text-center m-2 fs-3"> Información de la promoción o descripción </p>
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-outline-light"> Enlace </button>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="transparente m-3">
+                    <div class="card-header">
+                        <h3 class="text-black text-white text-center">CARD INFORMATIVA O PROMOCIONAL</h3>
+                    </div>
+                    <div class="card-body text-center">
+                        <img src="assets/promocion.png" alt="" class="img-fluid">
+                        <p class="text-black text-center m-2 fs-3"> Información de la promoción o descripción </p>
+                        <p class="text-black text-center m-2 fs-3"> Información de la promoción o descripción </p>
+                        <p class="text-black text-center m-2 fs-3"> Información de la promoción o descripción </p>
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-outline-light"> Enlace </button>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+            </div>
+
+        </div>
+
+        
+
+    </main>
+
+
+    <footer class="transparente-2 p-3 w-100">
+        <ul class="nav justify-content-center">
+            <li class="nav-item ">
+              <a class="nav-link text-black" href="sobre-nosotros.html">Quiénes somos</a>
+            </li>
+            <li class="nav-item text-white">
+              <a class="nav-link text-black" href="#">Contacto</a>
+            </li>
+            <li class="nav-item text-white">
+              <a class="nav-link text-black" href="#">Trabaje con nosotros</a>
+            </li>
+          </ul>
+      </footer>
+
+
+      <script defer src="js/bootstrap.js"></script>
+      <script defer src="js/font-awesome/all.js"></script>
+      <script defer src="js/font-awesome/fontawesome.js"></script>
+      <script defer src="js/font-awesome/regular.js"></script>
+      <script defer src="js/font-awesome/solid.js"></script>
+</body>
+</html>
