@@ -13,7 +13,7 @@
 </head>
 <body class="degradado-lineal">
     
-    <main style="overflow-x: hidden;" class="min-vh-100 position-relative">
+    <main style="overflow-x: hidden;" class="">
       <header class="w-100">
         <nav class="navbar navbar-expand-lg navbar-dark transparente">
             <div class="container-fluid">
@@ -49,20 +49,134 @@
           </nav>
     </header>
 
-        <div class="position-absolute h-75 w-100 d-flex flex-column justify-content-center">
+    <div class="col-md-12">
+              
+      <h4 class="text-white text-center m-1">Otros servicios</h4>
+      <div class="d-flex flex-row flex-wrap align-items-center justify-content-center">
+          <div class="transparente m-2 mt-3 p-1 d-flex flex-column justify-content-center align-items-center">
+              <img src="assets/auto.png" alt="auto" width="50">
+              <div class="m-1 mt-2">
+                  <div class="d-grid gap-2">
+                      <a href="simple-viajes.html" class="btn btn-outline-light btn-sm ">Viajes</a>
+                  </div>
+              </div>
+          </div>
 
-            <h1 class="text-center text-white m-3">¡Buscá y pedí lo que quieres!</h1>
+          <div class="transparente m-2 mt-3 p-1 d-flex flex-column justify-content-center align-items-center">
+              <img src="assets/carrito.png" alt="carrito" width="40">
+              <div class="m-1 mt-2">
+                  <div class="d-grid gap-2">
+                      <a href="simple-compras.html" class="btn btn-outline-light btn-sm ">Compras</a>
+                  </div>
+              </div>
+          </div>
 
-            <div class="d-flex flex-column align-items-center m-4">
+          <div class="transparente m-2 mt-3 p-1 d-flex flex-column justify-content-center align-items-center">
+              <img src="assets/pago.png" alt="moto" width="25">
+              <div class="m-1">
+                  <div class="d-grid gap-2">
+                      <a href="simple-pagos.html" class="btn btn-outline-light btn-sm ">Pagos</a>
+                  </div>
+              </div>
+          </div>
+
+          <div class="transparente m-2 mt-3 p-1 d-flex flex-column justify-content-center align-items-center">
+              <img src="assets/wallet.png" alt="moto" width="40">
+              <div class="m-1">
+                  <div class="d-grid gap-2">
+                      <a href="simple-wallet.html" class="btn btn-outline-light btn-sm ">Wallet</a>
+                  </div>
+              </div>
+          </div>
+
+      </div>
+
+      </div>
+
+        <div class="d-flex flex-column justify-content-center">
+          <h1 class="text-white text-center m-2 mt-3">Simple Delivery</h1>
+            
+            <div class="transparente m-3 rounded">
+              <h3 class="text-center text-white m-3">¡Buscá y pedí lo que quieres!</h3>
+
+            <div class="d-flex flex-column align-items-center m-4 mt-1">
                 <div class="input-group m-3">
                     <input type="text" class="form-control" placeholder="Restaurantes, kioskos, farmacias..." aria-label="Recipient's username" aria-describedby="button-addon2">
                     <button class="btn btn-outline-light" type="button" id="button-addon2">Buscar</button>
                   </div>
             </div>
 
+            <div class="row">
+              <div class="col-md-3">
+                <div class="transparente-2 m-3">
+                  <div class="card-header">
+                    <h3 class="text-white text-center">Negocio</h3>
+                  </div>
+                  <div class="card-body">
+                    <div class="d-flex flex-column justify-content-center align-items-center">
+                      <img src="assets/negocio.png" alt="nogocio" class="img-fluid" width="300">
+                    </div>
+                    <p class="">Información del negocio</p>
+                    <p>Ubicación del negocio</p>
+                    <p>Calificación</p>
+                    <p>Tiempo de entrega</p>
+                    <div class="d-grid gap-2">
+                      <a href="#" class="btn btn-outline-light"><span><i class="fas fa-motorcycle"></i> Pedir</span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            </div>
+
+            <div class="transparente m-3 rounded">
+              <h3 class="text-center text-white m-3">Servicio de paquetería.</h3>
+
+            <div class="d-flex flex-column align-items-center m-4 mt-1">
+                <div>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    Enviar paquete
+                  </button>
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="staticBackdropLabel">Enviar paquete</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <form action="">
+                            <div class="form-group m-3">
+                              <label for="nombre" class="form-label">Nombre del paquete</label>
+                              <input type="text" class="form-control" placeholder="Ejemplo: caja con papelería" id="nombre">
+                            </div>
+                            <div class="form-group m-3">
+                              <label for="peso" class="form-label">Peso del paquete en kg</label>
+                              <input type="number" class="form-control" placeholder="Ejemplo: 12kg" id="peso">
+                            </div>
+                            <div class="form-group m-3">
+                              <label for="ubicacion" class="form-label">Ubicación de destino</label>
+                              <input type="number" class="form-control" placeholder="Ejemplo: Buenos Aires" id="ubicacion">
+                            </div>
+                          </form>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Aceptar</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            </div>
+
         </div>
 
-        <footer class="transparente fixed-bottom p-3 w-100">
+        <footer class="transparente p-3 w-100">
           <ul class="nav justify-content-center">
               <li class="nav-item ">
                 <a class="nav-link text-white" aria-current="page" href="sobre-nosotros.html">Quiénes somos</a>
