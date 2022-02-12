@@ -12,6 +12,12 @@
     <title>Simple Delivery</title>
 </head>
 <body class="degradado-lineal">
+
+  <script>
+    function red(){
+      window.location.href = "./pagina-construccion.html"
+    }
+  </script>
     
     <main style="overflow-x: hidden;" class="">
       <header class="w-100">
@@ -114,7 +120,7 @@
             <div class="d-flex flex-column align-items-center m-4 mt-1">
                 <div class="input-group m-3">
                     <input type="text" class="form-control" placeholder="Restaurantes, kioskos, farmacias..." aria-label="Recipient's username" aria-describedby="button-addon2">
-                    <button class="btn btn-outline-light" type="button" id="button-addon2">Buscar</button>
+                    <button class="btn btn-outline-light" type="button" id="button-addon2" onclick="red()">Buscar</button>
                   </div>
             </div>
 
@@ -133,7 +139,7 @@
                     <p>Calificación</p>
                     <p>Tiempo de entrega</p>
                     <div class="d-grid gap-2">
-                      <a href="#" class="btn btn-outline-light"><span><i class="fas fa-motorcycle"></i> Pedir</span></a>
+                      <a href="pagina-construccion.html" class="btn btn-outline-light"><span><i class="fas fa-motorcycle"></i> Pedir</span></a>
                     </div>
                   </div>
                 </div>
@@ -177,7 +183,7 @@
                           </form>
                         </div>
                         <div class="modal-footer">
-                          <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Aceptar</button>
+                          <button type="button" class="btn btn-outline-dark" onclick="red()" data-bs-dismiss="modal">Aceptar</button>
                         </div>
                       </div>
                     </div>

@@ -12,7 +12,11 @@
     <title>Simple Viajes - Conductor</title>
 </head>
 <body class="degradado-lineal">
-    
+  <script>
+    function red(){
+      window.location.href = "./pagina-construccion.html"
+    }
+  </script>
     <main style="overflow-x: hidden;" class="">
       <header class="w-100">
         <nav class="navbar navbar-expand-lg navbar-dark transparente">
@@ -87,7 +91,7 @@
                                               <p>Más información</p>
                                             </div>
                                             <div class="modal-footer">
-                                              <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Empezar servicio</button>
+                                              <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal" onclick="red()">Empezar servicio</button>
                                             </div>
                                           </div>
                                         </div>
@@ -105,16 +109,16 @@
 
         </div>
 
-        <footer class="fixed-bottom p-3 w-100">
+        <footer class="p-3 w-100">
           <ul class="nav justify-content-center">
               <li class="nav-item ">
                 <a class="nav-link text-white" aria-current="page" href="sobre-nosotros.html">Quiénes somos</a>
               </li>
               <li class="nav-item text-white">
-                <a class="nav-link text-white" href="#">Contacto</a>
+                <a class="nav-link text-white" href="pagina-construccion.html">Contacto</a>
               </li>
               <li class="nav-item text-white">
-                <a class="nav-link text-white" href="#">Trabaje con nosotros</a>
+                <a class="nav-link text-white" href="pagina-construccion.html">Trabaje con nosotros</a>
               </li>
             </ul>
         </footer>

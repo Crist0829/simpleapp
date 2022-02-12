@@ -12,6 +12,11 @@
     <title>Simple Viajes - Usuario</title>
 </head>
 <body class="degradado-lineal">
+  <script>
+    function red(){
+      window.location.href = "./pagina-construccion.html"
+    }
+  </script>
     
     <main style="overflow-x: hidden;" class="">
       <header class="w-100">
@@ -86,7 +91,7 @@
                                               <p>Más información</p>
                                             </div>
                                             <div class="modal-footer">
-                                              <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Contratar</button>
+                                              <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal" onclick="red()">Contratar</button>
                                             </div>
                                           </div>
                                         </div>
@@ -104,7 +109,7 @@
 
         </div>
 
-        <footer class="fixed-bottom p-3 w-100">
+        <footer class="p-3 w-100">
           <ul class="nav justify-content-center">
               <li class="nav-item ">
                 <a class="nav-link text-white" aria-current="page" href="sobre-nosotros.html">Quiénes somos</a>
